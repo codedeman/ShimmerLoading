@@ -15,7 +15,7 @@ struct ContentView: View {
         ScrollView {
             VStack {
                 if isLoading {
-                    ForEach(0..<3) { _ in
+                    ForEach(0..<10) { _ in
                         SkeletonView()
                             .padding(.bottom, 16)
                     }
@@ -27,7 +27,7 @@ struct ContentView: View {
             }
             .onAppear {
                 // Simulate loading delay
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 100) {
                     isLoading = false
                 }
             }

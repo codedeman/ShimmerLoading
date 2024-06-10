@@ -11,7 +11,7 @@ import ShimmerLoading
 struct SkeletonView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            ShimmerView(color: .blue) {
+            ShimmerView(color: .gray) {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.gray.opacity(0.3))
                     .frame(height: 200)
@@ -19,14 +19,14 @@ struct SkeletonView: View {
             .frame(height: 200)
 
             VStack(alignment: .leading, spacing: 8) {
-                ShimmerView(color: .blue) {
+                ShimmerView(color: .gray) {
                     RoundedRectangle(cornerRadius: 5)
                         .fill(Color.gray.opacity(0.3))
                         .frame(height: 20)
                 }
                 .frame(height: 20)
 
-                ShimmerView(color: .blue) {
+                ShimmerView(color: .gray) {
                     RoundedRectangle(cornerRadius: 5)
                         .fill(Color.gray.opacity(0.3))
                         .frame(height: 20)
