@@ -163,6 +163,8 @@ struct ShimmerView<Content: View>: View {
     }
 }
 ```
+### Demo
+
 ![Demo](https://raw.githubusercontent.com/codedeman/ShimmerLoading/main/Sample/Simulator%20Screen%20Recording%20-%20iPhone%2015%20-%202024-06-10%20at%2022.12.56.gif)
 
 ### Contributing
