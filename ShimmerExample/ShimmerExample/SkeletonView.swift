@@ -32,7 +32,7 @@ struct SkeletonView: View {
                         .frame(height: 20)
                 }
                 .frame(height: 20)
-
+            
                 ShimmerView(color: .blue) {
                     RoundedRectangle(cornerRadius: 5)
                         .fill(Color.gray.opacity(0.3))

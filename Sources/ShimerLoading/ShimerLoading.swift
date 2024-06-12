@@ -66,10 +66,15 @@ public struct ShimmerView<Content: View>: View {
                             gradient
                                 .scaleEffect(2)
                                 .rotationEffect(direction == .leftToRight || direction == .rightToLeft ? .degrees(0) : .degrees(90))
-                                .offset(x: direction == .leftToRight ? gradientPosition * UIScreen.main.bounds.width : (direction == .rightToLeft ? -gradientPosition * UIScreen.main.bounds.width : 0),
-                                        y: direction == .topToBottom ? gradientPosition * UIScreen.main.bounds.height : (direction == .bottomToTop ? -gradientPosition * UIScreen.main.bounds.height : 0))
+                                .offset(
+                                    x: direction == .leftToRight ? gradientPosition * UIScreen.main.bounds.width : (direction == .rightToLeft ? -gradientPosition * UIScreen.main.bounds.width : 0),
+                                    y: direction == .topToBottom ? gradientPosition * UIScreen.main.bounds.height : (direction == .bottomToTop ? -gradientPosition * UIScreen.main.bounds.height : 0)
+                                )
                         )
-                        .animation(offsetAnimation, value: gradientPosition)
+                        .animation(
+                            offsetAnimation,
+                            value: gradientPosition
+                        )
                 )
         }
         .onAppear {
